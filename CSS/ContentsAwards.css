@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+#contents-awards {
+    display: flex;
+    justify-content: space-between;
+}
