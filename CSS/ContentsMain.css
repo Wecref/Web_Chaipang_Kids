@@ -19,13 +19,13 @@
 
     z-index: 0;
 }
-#contents-main #Info {
+#contents-main .Info {
     color: #4f4279;
 }
-#contents-main #Info p span:first-child {
+#contents-main .Info p span:first-child {
     font-size: 1.34em;
 }
-#contents-main #Info p {
+#contents-main .Info p {
     text-align: center;
     line-height: 1.25em;
     /* margin: 0em 1em; */

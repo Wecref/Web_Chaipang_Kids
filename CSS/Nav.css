@@ -39,7 +39,7 @@ nav #logo img {
     width: 6.188em;
 }
 /**/
-nav #menu_icon {
+nav .menu_icon {
     width: 4em;
     height: 4em;
     filter: opacity(0.5) drop-shadow(0 0 0 red);
@@ -47,10 +47,10 @@ nav #menu_icon {
     display: none;
 }
 /**/
-nav #contents.active {
+nav .contents.active {
     display: flex;
 }
-nav #contents{
+nav .contents{
     width: 100%;
     display: flex;
     color: #6B6B6B;
@@ -59,27 +59,27 @@ nav #contents{
     font-size: 1.125em;
 }
 /**/
-nav #menus {
+nav .menus {
     /* background-color: #f0ffff; */
     display: flex;
     align-items: center;
 }
-nav #menus li:not(:last-child) {
+nav .menus li:not(:last-child) {
     padding: 0em 1em 0em 0em;
 }
-nav #menus li:nth-child(-n+4):hover {
+nav .menus li:nth-child(-n+4):hover {
     color: #ffd200;
     cursor: pointer;
 }
-nav #menus li:not(:nth-child(-n+5)) a{
+nav .menus li:not(:nth-child(-n+5)) a{
     color: #6B6B6B;
 }
-nav #menus li:not(:nth-child(-n+5)) a:hover {
+nav .menus li:not(:nth-child(-n+5)) a:hover {
     color: #ffd200;
     cursor: pointer;
 }
 /**/
-nav #link {
+nav .link {
     background-color: #AFAFAF;
     display: flex;
     margin: 0em 1.5em 0em 1.5em;
@@ -90,33 +90,33 @@ nav #link {
     justify-content: center;
     justify-content: space-around;
 }
-nav #link li{
+nav .link li{
     display: flex;
     align-items: center;
     justify-items: center;
 }
-nav #link li:nth-child(2) {
+nav .link li:nth-child(2) {
     padding: 0em .5em 0em .5em;
 }
-nav #link img {
+nav .link img {
     display: flex;
     cursor: pointer;
     width: 20px;
     height: auto;
 }
 /**/
-nav #lang {
+nav .lang {
     /* background-color: rgb(226, 43, 104); */
     display: flex;
     align-items: center;
 }
-nav #lang li:nth-child(2) {
+nav .lang li:nth-child(2) {
     padding: 0em .5em 0em .5em;
 }
-nav #lang li:last-child {
+nav .lang li:last-child {
     padding-right: 1em;
 }
-nav #lang li:not(:nth-child(2)):hover {
+nav .lang li:not(:nth-child(2)):hover {
     color: #ffd200;
     cursor: pointer;
 }

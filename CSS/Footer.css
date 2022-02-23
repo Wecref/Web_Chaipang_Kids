@@ -11,58 +11,58 @@ footer ul{
     padding: 0em;
 }
 /**/
-footer #footer-link {
+footer .link {
     width: 100%;
     display: flex;
     padding-top: 2.7em;
     padding-bottom: .5em;
 
-    background-color: #FFE5CC;
+    background-color: #E4E1FF;
     justify-content: center;
 }
-footer #footer-link li:nth-child(2){
+footer .link li:nth-child(2){
     margin: 0em 3em;
 }
-footer #footer-link li:first-child img {
+footer .link li:first-child img {
     width: 2.75em;
 }
-footer #footer-link li:nth-child(2) img {
+footer .link li:nth-child(2) img {
     width: 2.3em;
 }
-footer #footer-link li:last-child img {
+footer .link li:last-child img {
     width: 2.6em;
 }
 /**/
-footer #footer-info{
+footer .info{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-family: "NanumSquareE";
     color: #ffffff;
     padding: 1.5em 1.5em;
-    background-color: #FFD2B3;
+    background-color: #cdbbff;
 }
 
-footer #footer-info ul:nth-child(2) {
+footer .info ul:nth-child(2) {
     font-size: 1.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 100px 0px 100px;
+    /* margin: 0px 100px 0px 100px; */
 }
-footer #footer-info ul:not(:nth-child(2)) {
+footer .info ul:not(:nth-child(2)) {
     font-size: 1.1875em;
 }
-footer #footer-info ul:not(:nth-child(2)) li:not(:last-child){
+footer .info ul:not(:nth-child(2)) li:not(:last-child){
     padding-bottom: .125em;
 }
-footer #footer-info ul:nth-child(2) li:first-child{
+footer .info ul:nth-child(2) li:first-child{
     padding-bottom: 1.5em;
 }
-footer #footer-info ul:nth-child(2) li:last-child {
+footer .info ul:nth-child(2) li:last-child {
     text-align: center;
 }
-footer #footer-info ul:nth-child(2) img {
+footer .info ul:nth-child(2) img {
     width: 100%;
 }

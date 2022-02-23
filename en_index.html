@@ -52,34 +52,33 @@
 <body>
     <span id="menu-main"></span>
     <nav>
-        <div id="main">
-            <div id="logo">
+        <div class="main">
+            <div class="logo">
                 <ul class="MarginZero">
                     <li><img src="./Resources/Img/kids_1.png"/></li>
                 </ul>
             </div>
             <img
-                id="menu_icon"
+                class="menu_icon"
                 src="./Resources/Img/list_white_48dp.svg"
                 alt="메뉴 아이콘"
             />
         </div>
-        <div id="contents" class="NanumB Font20Size">
-            <ul id="menus" class="MarginZero PaddingZero">            
+        <div class="contents NanumB Font20Size">
+            <ul class="menus MarginZero PaddingZero">            
                 <li data-href="#menu-main">About us</li>
-                <li data-href="#menu-chinese">Chaipang Chinese</li>
-                <li data-href="#menu-math">Chaipang Math</li>
+                <li data-href="#menu-educational">Educational Contents</li>
                 <li data-href="#menu-friends">Chaipang Friends</li>
+                <li data-href="#menu-business">Business</li>
                 <li>|</li>
-                <li><a href="#">Business</a></li>
                 <li><a href="#">Wecref Co., Ltd.</a></li>
             </ul>
-            <ul id="link">
+            <ul class="link">
                 <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/Math_4.png"/></a></li>
                 <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"/></a></li>
                 <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"/></a></li>
             </ul>
-            <ul id="lang" class="MarginZero PaddingZero">
+            <ul class="lang MarginZero PaddingZero">
                 <li data-lang="kr_index.html">KOR</li>
                 <li>|</li>
                 <li data-lang="en_index.html" class="clicked">ENG</li>
@@ -88,7 +87,7 @@
     </nav>
     <div id="contents-main">
         <img src="./Resources/Img/kids_2.png"/>
-        <div id="Info">
+        <div class="Info">
             <p class="NanumB Font30Size">
                 <span class="TxtNeon">Chaipang Kids </span>is<br class="br"/> a <span class="TxtNeon">children's educational content </span>
                 <br class="br"/>that children from all over the world can learn naturally 
@@ -99,90 +98,147 @@
         <img src="./Resources/Img/kids_frends.png"/>
     </div>
     <div id="waveDecoUp"></div>
-    <div id="waveFlagDeco"></div>
+    <div id="waveFlagDeco"></div>    
     <div id="contents-awards">
         <img src="Resources/Img/Kids_garu_L.png" alt="종이효과">
-        <img src="Resources/Img/Kr/Kids_awards.png" alt="수상이력">
+        <img src="Resources/Img/En/Kids_awards.png" alt="수상이력">
         <img src="Resources/Img/Kids_garu_R.png" alt="종이효과">
-
     </div>
-    
-    <!-- 
-    
+    <span id="menu-educational"></span>
     <div id="contents-category">
-        <div id="contents-category-container">
-            <span id="menu-addition"></span>
-            <p id="title" class="NanumEB Font45Size">Chaipang Addition</p>
-            <img id="title-img" src="./Resources/Img/En/Math_8.png" />
-            <p id="info" class="NanumEB Font33Size">Enjoy ‘single digit addition’ games. <br class="br"/>Your child’s calculation skills will improve!</p>
-            <div id="release-container">
-                <img src="./Resources/Img/Math_9.png"/>
-                <div id="release-container-info">
-                    <div id="release-info">
-                        <img src="./Resources/Img/En/Math_10-1.png"/>
-                        <div>
-                            <p class="NanumEB Font25Size">Increase the speed and accuracy of calculations</p>
-                            <p class="NanumR Font20Size">‘Chaipang Addition’ is a game-based calculation learning app<br class="br"/> designed to improve children’s ‘single digit addition’ skills.</p>
-                        </div>
+        <div class="one">
+            <div class="main">
+                <p class="NanumEB Font45Size">Educational Contents</p>
+                <p class="NanumB Font30Size"><span class="TxtNeon">With Chaipang Chinese</span> as our main service,<br/> we are expanding our educational contents such as<br/> Chaipang addition, subtraction, multiplication, and so on.</p>
+            </div>
+            <div class="bodys">
+                <div class="category">
+                    <div class="info">
+                        <img src="Resources/Img/En/kids_3.png" alt="중국어">
+                        <p class="NanumR Font25Size">Chaipang Chinese allows your child to speak Chinese <br/>without memorizing and studying. <br/>Learn the tone and pronunciation perfectly with songs and notes.</p>
                     </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/En/Math_10-2.png"/>
-                        <div>
-                            <p class="NanumEB Font25Size">Increase the immersion level of children</p>
-                            <p class="NanumR Font20Size">‘Chaipang Addition’ is set in kindergarten and<br class="br"/> is played in the form of card games with friends.</p>                            
-                        </div>
+                    <div class="link">
+                        <img src="Resources/Img/kids_4.png" alt="앱 아이콘">
+                        <p class="NanumR Font30Size">Chaipang Chinese</p>
+                        <a href=""><p class="NanumEB Font20Size">▷ Go to website</p></a>
                     </div>
-                    <div id="release-info">
-                        <img src="./Resources/Img/En/Math_10-3.png"/>
-                        <div>
-                            <p class="NanumEB Font25Size">Motivation to improve calculation skills</p>
-                            <p class="NanumR Font20Size">All 50 characters you play with have different calculation skills.</p>
-                            <p class="NanumR Font20Size">Your ranking changes according to the result of the game with each character.</p>
-                        </div>
+                </div>
+                <div class="category">
+                    <div class="info">
+                        <img src="Resources/Img/En/kids_5.png" alt="수학">
+                        <p class="NanumR Font25Size"><span class="TxtNeonB">Chaipang Addition</span>, <span class="TxtNeonC">Chaipang Substraction</span>, <br/>and <span class="TxtNeonD">Chaipang Multiplication</span> improve the accuracy <br/>and speed of arithmetic calculations.</p>
+                    </div>
+                    <div class="link">
+                        <img src="Resources/Img/kids_6.png" alt="앱 아이콘">
+                        <p class="NanumR Font30Size">Chaipang Math</p>
+                        <a href="https://math.chaipangkids.com/"><p class="NanumEB Font20Size">▷ Go to website</p></a>
                     </div>
                 </div>
             </div>
-            <ul id="release-container-imgs" class="">
-                <li><img src="./Resources/Img/En/Math_11.png"/></li>
-                <li><img src="./Resources/Img/En/Math_12.png"/></li>
-                <li><img src="./Resources/Img/En/Math_13.png"/></li>
-                <li><img src="./Resources/Img/En/Math_14.png"/></li>
-                <li><img src="./Resources/Img/En/Math_15.png"/></li>
-            </ul>
-            <ul id="release-container-link">
-                <li><a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.chinese&hl=en&gl=kr"><img src="./Resources/Img/source.png"/></a></li>
-                <li><a href="https://apps.apple.com/kr/app/%EC%B0%A8%EC%9D%B4%ED%8C%A1-%EC%A4%91%EA%B5%AD%EC%96%B4/id1570555582"><img src="./Resources/Img/source_1.png"/></a></li>
-            </ul>
         </div>
-        <div id="newline"></div>
-        <div id="contents-category-container">
-            <span id="menu-subtraction"></span>
-            <p id="title" class="NanumEB Font45Size">Chaipang Substraction</p>
-            <img id="title-img" src="./Resources/Img/En/Math_16.png" />
-            <p id="info" class="NanumEB Font33Size">Upgrade to the next level! <br class="br"/>Enjoy the subtraction game.</p>
-            <img id="character" src="./Resources/Img/Math_17.png"/>
-            <p id="comingSoon" class="MarginZero NanumEB Font45Size">Chaipang Substraction will be released in the</p>
-            <p id="comingSoon" class="MarginZero NanumEB Font45Size">first half of 2022!</p>
+        <span id="menu-friends"></span>
+        <div class="newline"></div>
+        <div class="two">
+            <div class="main">
+                <p class="NanumEB Font45Size">Chaipang Friends</p>
+            </div>
+            <div class="bodys">
+                <img src="Resources/Img/En/kids_7.png" alt="차이팡 월드">
+                <div class="infos">
+                    <div class="template">
+                        <div class="tag">
+                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
+                            <p class="NanumEB Font25Size">Step1</p>
+                        </div>
+                        <div class="info">
+                            <p class="NanumB Font25Size">Unicorn world</p>
+                            <p class="NanumR Font20Size">It's a village of unicorns where fun festivals are held every day.</p>
+                        </div>
+                    </div>
+                    <div class="template">
+                        <div class="tag">
+                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
+                            <p class="NanumEB Font25Size">Step2</p>
+                        </div>
+                        <div class="info">
+                            <p class="NanumB Font25Size">Dragon world</p>
+                            <p class="NanumR Font20Size">It is a village of dragons full of mysterious ore and jewels.</p>
+                        </div>
+                    </div>
+                    <div class="template">
+                        <div class="tag">
+                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
+                            <p class="NanumEB Font25Size">Step3</p>
+                        </div>
+                        <div class="info">
+                            <p class="NanumB Font25Size">Mermaid world</p>
+                            <p class="NanumR Font20Size">It is a beautiful sea village where mermaids live together.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friendsInfo">
+                    <div class="tag">
+                        <img src="Resources/Img/kids_9.png" alt="태그">
+                        <p class="NanumEB Font20Size">I’ll introduce Chaipang Friends!</p>
+                    </div>
+                    <div class="imgs">
+                        <img src="Resources/Img/En/kids_10.png" alt="">
+                        <img src="Resources/Img/En/kids_11.png" alt="">
+                        <img src="Resources/Img/En/kids_12.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="newline"></div>
-        <div id="contents-category-container">
-            <span id="menu-multiplication"></span>
-            <p id="title" class="NanumEB Font45Size">Chaipang Multiplication</p>
-            <img id="title-img" src="./Resources/Img/En/Math_23.png" />
-            <p id="info" class="NanumEB Font33Size">Let’s learn multiplication <br class="br"/>with Chaipang Friends.</p>
-            <img id="character" src="./Resources/Img/Math_18.png"/>
-            <p id="comingSoon" class="MarginZero NanumEB Font45Size">Chaipang Substraction will be released in the</p>
-            <p id="comingSoon" class="MarginZero NanumEB Font45Size">first half of 2022!</p>
+        <span id="menu-business"></span>
+        <div class="newline"></div>
+        <div class="three">
+            <div class="main">
+                <p class="NanumEB Font45Size">Business</p>
+                <p class="NanumB Font30Size">
+                    We not only produce <span class="TxtNeon">app-based educational contents</span> for children, <br/>but also operate an <span class="TxtNeon">educational YouTube channel</span> and <span class="TxtNeon">publish books and textbooks</span> <br/>to enhance educational effectiveness.</p>
+            </div>
+            <div class="template">
+                <div class="tag">
+                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
+                    <p class="NanumEB Font25Size">Application</p>
+                </div>
+                <img src="Resources/Img/kids_13.png" alt="차이팡 앱">
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.chinese&hl=en&gl=kr"><img src="Resources/Img/source.png" alt="구글스토어"></a>
+                    <a href="https://apps.apple.com/de/app/chaipang-chinese/id1570555582?l=en"><img src="Resources/Img/source_1.png" alt="애플스토어"></a>
+                </div>
+            </div>
+            <div class="template">
+                <div class="tag">
+                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
+                    <p class="NanumEB Font20Size">YouTube Chaipang kids</p>
+                </div>
+                <div>
+                    <img src="Resources/Img/Kr/kids_14.png" alt="차이팡 앱">
+                    <a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="Resources/Img/En/kids_15.png" alt="유튜브 버튼"></a>
+                </div>
+            </div>
+            <div class="template">
+                <div class="tag">
+                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
+                    <p class="NanumEB Font20Size">Books & Textbooks</p>
+                </div>
+                <div>
+                    <a href=""><img src="Resources/Img/Kr/kids_16-1.png" alt="유튜브 버튼"></a>
+                    <a href=""><img src="Resources/Img/KR/kids_16-2.png" alt="유튜브 버튼"></a>
+                    <a href=""><img src="Resources/Img/Kr/kids_16-3.png" alt="유튜브 버튼"></a>
+                </div>
+            </div>
         </div>
     </div>
     <div id="waveDecoDown"></div>
     <footer>
-        <ul id="footer-link">
-            <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/Math_20.png"/></a></li>
-            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_21.png"/></a></li>
-            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_22.png"/></a></li>
+        <ul class="link">
+            <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img src="./Resources/Img/kids_18.png"/></a></li>
+            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/kids_19.png"/></a></li>
+            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/kids_20.png"/></a></li>
         </ul>
-        <div id="footer-info">
+        <div class="info">
             <ul>
                 <li>Wecref Co., Ltd | CEO PARK, Jeongyeon</li>
                 <li>Business registration number | 281-81-01776</li>
@@ -199,6 +255,6 @@
                 <li>E-mail | support@wecref.com, jyp@wecref.com</li>
             </ul>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
