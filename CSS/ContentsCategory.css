@@ -168,3 +168,7 @@
     flex-wrap: wrap;
     margin: 1.5em 0em;
 }
+
+#contents-category .three div:nth-child(4) div:last-child img:nth-child(2) {
+    margin: 0em 2em;
+}
