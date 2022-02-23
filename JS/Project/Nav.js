@@ -20,7 +20,6 @@ function OpenMenu(event){
 }
 
 export function InitMenu(targets){
-    console.log(targets);
     for (var i = 0; i < targets.length; i++){
         targets[i].addEventListener("click", (event)=>{
             ClickCss(event, targets);
