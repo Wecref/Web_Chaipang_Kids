@@ -268,6 +268,18 @@
         top: .4em;
         left: 2.65em;
     }
+    #contents-category .three div:nth-child(2) .tag p.kr {
+        top: .1em;
+        left: 1.6em;
+    }
+    #contents-category .three div:nth-child(3) .tag p.kr {
+        top: .4em;
+        left: 3em;
+    }
+    #contents-category .three div:nth-child(4) .tag p.kr {
+        top: .4em;
+        left: 3.5em;
+    }
 }
 @media screen and (max-width: 1200px){
     #contents-category .three div:nth-child(4) div:last-child {
