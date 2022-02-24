@@ -13,35 +13,6 @@ body ul {
 body a {
     text-decoration: none;
 }
-/* Nav */
-@media screen and (max-width: 1200px)
-{
-    nav { 
-        flex-direction: column; 
-    }
-    nav .contents {
-        display: none;
-        flex-direction: column;
-        padding-top: 2em;
-    }
-    nav .menu_icon {
-        display: flex;
-    }
-    nav .link {
-        margin: 1em 0em;
-    }
-    nav .lang li:last-child {
-        padding-right: 0em;
-    }
-}
-@media screen and (max-width: 800px) {
-    nav .menus {
-        flex-direction: column;
-    }
-    nav .menus li:not(:last-child) {
-        padding: 0em 0em .3em 0em;
-    }
-}
 
 /* @media screen and (max-width: 1650px) 
 {
