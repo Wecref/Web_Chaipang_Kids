@@ -34,7 +34,7 @@
     margin: 2em 0em;
 }
 #contents-main > img:last-child {
-    width: 100%;
+    width: 90%;
     max-width: 1258px;
 }
 @media screen and (max-width: 900px)
