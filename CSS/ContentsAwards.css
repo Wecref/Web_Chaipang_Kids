@@ -4,3 +4,27 @@
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width: 1800px){
+    #contents-awards img {
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1490px){
+    #contents-awards img {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #contents-awards img {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 900px){
+    #contents-awards img:nth-child(2){
+        width: 100%;
+        height: auto;
+    }
+    #contents-awards img:not(:nth-child(2)) {
+        display: none;
+    }
+}
