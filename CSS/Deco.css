@@ -49,10 +49,33 @@ div#waveFlagDeco {
 .TxtNeonD{
     color: #8e2fea;
 }
-
+/**/
 .newline{
     width: 50%;
     height: .25em;
     margin: 10em 0em 5em 0em;
     background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 768px) {
+    div#waveFlagDeco {
+        height: 4.5em;
+    }
+    div#waveDecoUp {
+        height: 3.5em;
+    }
+    div#waveDecoDown {
+        height: 3.5em;
+    }
+}
+@media screen and (max-width: 458px) {
+    div#waveFlagDeco {
+        height: 3em;
+    }
+    div#waveDecoUp {
+        height: 2em;
+    }
+    div#waveDecoDown {
+        height: 2em;
+    }
 }
