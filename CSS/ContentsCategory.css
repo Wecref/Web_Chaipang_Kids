@@ -3,7 +3,7 @@
 #contents-category {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 10em;
     line-height: 2.25em;
     align-items: center;
 }
@@ -95,7 +95,7 @@
     margin: 0em;
 }
 #contents-category > .two .template .tag{
-    margin: -2em 1em 1em 1em;
+    margin: -1em 1em 1em 1em;
 }
 #contents-category > .two .template .tag img{
     width: 6.625em;
