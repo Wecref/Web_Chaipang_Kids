@@ -64,7 +64,15 @@ footer .info ul:nth-child(2) li:last-child {
 footer .info ul:nth-child(2) img {
     width: 100%;
 }
-
+/**/
+footer .address {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+footer .address p{
+    margin: 0em;
+}
 /**/
 @media screen and (max-width: 1385px) {
     footer .info {
