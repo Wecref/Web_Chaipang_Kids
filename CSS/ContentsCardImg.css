@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+div.contents-card img.singleImg01 {
+    max-width: 1142px;
+    width: 38.1em;
+}
+
+div.contents-card div.info01 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.info01 div.partition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em 0 0 0;
+}
+
+div.contents-card div.info01 div.partition:nth-child(n+2) {
+    margin: 0 0 0 0;
+}
+
+div.contents-card div.info01 div.partition .tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 106px;
+    width: 3.55em;
+
+    background-image: url("../Resources/Img/kids_8.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.contents-card div.info01 div.partition .tag h1 {
+    margin: 0;
+    font-size: .85em;
+    padding-top: .8em;
+    color: #ffffff;
+    font-family: "NanumSquareEB";
+}
+
+div.contents-card div.info01 div.partition div.subInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin: .6em;
+}
+
+div.contents-card div.info01 div.partition div.subInfo h1 {
+    margin: 0;
+    color: #00c8c8;
+    font-size: .85em;
+}
+
+div.contents-card div.info01 div.partition div.subInfo p {
+    margin: 0;
+    color: #686868;
+    font-size: .7em;
+}
+
+div.contents-card div.micoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    max-width: 442px;
+    max-height: 101px;
+    width: 14.8em;
+    height: 4em;
+
+    background-image: url("../Resources/Img/kids_9.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 3em;
+}
+
+div.contents-card div.micoInfo h1 {
+    margin: 0;
+    font-size: .85em;
+    font-family: "NanumSquareEB";
+    color: #ffffff;
+
+    padding-right: .8em;
+    padding-top: .5em;
+}
+
+div.contents-card div.unicornInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 284px;
+    max-height: 68px;
+    width: 10em;
+    height: 3em;
+
+    background-image: url("../Resources/Img/kids_17.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+div.contents-card div.unicornInfo h1 {
+    margin: 0;
+    font-size: .85em;
+    font-family: "NanumSquareEB";
+    color: #ffffff;
+    padding-top: .8em;
+}
+
+div.contents-card div.multiImg01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.multiImg01 img {
+    max-width: 350px;
+    width: 11.7em;
+    margin: 1em;
+}
+
+div.contents-card img.singleImg02 {
+    max-width: 1081px;
+    width: 36.1em;
+    height: auto;
+}
+
+div.contents-card div.storeLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+div.contents-card div.storeLinks a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: .25em;
+}
+
+div.contents-card div.storeLinks img {
+    max-width: 176px;
+    width: 5.9em;
+}
+
+div.contents-card div.youtubeSite {
+    background-image: url("../Resources/Img/Kr/website_Chaipangkids_youtube.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    max-width: 634px;
+    max-height: 336px;
+    width: 21.2em;
+    height: 11.2em;
+}
+
+div.contents-card div.youtubeSite a {
+    margin-right: .25em;
+    margin-bottom: .25em;
+}
+
+div.contents-card div.youtubeSite a img {
+    max-width: 164px;
+    width: 5.47em;
+}
+
+div.contents-card div.multiImg02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.multiImg02 .area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 1em;
+}
+
+div.contents-card div.multiImg02 .area .big {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.multiImg02 .area .big img {
+    max-width: 311px;
+    width: 10.4em;
+    margin: .25em;
+}
+
+div.contents-card div.multiImg02 .area .small {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.multiImg02 .area .small img {
+    max-width: 101px;
+    width: 3.4em;
+    margin: .1em;
+
+}
+
+div.contents-card div.multiImg02 .area .small>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.ip {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 1em;
+}
+
+div.contents-card div.ip img._1 {
+    max-width: 395px;
+    width: 13.2em;
+}
+
+div.contents-card div.ip img._2 {
+    max-width: 602px;
+    width: 20.1em;
+}
+
+div.contents-card div.ip img._3 {
+    max-width: 658px;
+    width: 22em;
+}
+
+div.contents-card div.ip img._4 {
+    max-width: 486px;
+    width: 16.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    div.contents-card img.singleImg01 {
+        width: 34em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.contents-card img.singleImg01 {
+        width: 25em;
+    }
+
+    div.contents-card div.ip {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    div.contents-card img.singleImg02 {
+        width: 18em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    div.contents-card img.singleImg01 {
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    div.contents-card div.info01 div.partition {
+        font-size: .9em;
+    }
+
+    div.contents-card div.youtubeSite {
+        width: 19em;
+    }
+
+
+}

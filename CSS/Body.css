@@ -1,223 +1,102 @@
 @charset "UTF-8";
+
 html,
 body {
-    background-color: white;
-    margin: 0px;
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    font-size: 30px;
     word-break: keep-all;
+    font-family: "NanumSquareB";
 }
+
 body ul {
     list-style: none;
 }
+
 body a {
     text-decoration: none;
 }
 
-/* @media screen and (max-width: 1650px) 
-{
-    nav { 
-        flex-direction: column; 
-        padding: .25em;
-    }
-    nav #nav-contents {
-        display: none;
-        flex-direction: column;
-        padding-top: 2em;
-    }    
-    nav #nav-contents > ul:not(:first-child){
-        margin-top: 1em;
-    }
-    nav #nav-contents-lang li:last-child {
-        padding-right: 0em;
-    }
-    nav #nav_menu_icon {
-        display: flex;
-    }
-
-    #contents-category-container > #info {
-        font-size: 1.8em;
-    }
+div#waveDecoDown,
+div#waveDecoUp {
+    background-image: url("../Resources/Img/WaveDecoration.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    width: 100%;
+    height: 3em;
 }
 
-@media screen and (max-width: 1400px) {
-    footer #footer-info ul:nth-child(2) {
-        font-size: 1.0625em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 1em;
-    }
+div#waveDecoDown {
+    transform: rotate(180deg);
+    margin-bottom: -2em;
+    margin-top: 10em;
 }
 
-@media screen and (max-width: 1200px) {
-    #contents-main-InfoA {
-        padding: .8em 1.8em;
-        margin: 0em 1em;
-    }
-    #contents-main-InfoA p {
-        font-size: 1.3em;
-    }
-    #contents-main-InfoB {
-        font-size: .9em;
-    }
-    #contents-main {
-        height: 45em;
-    }
-     #contents-category-container > #title {
-        margin-bottom: 3em;
-    }
-    #contents-category-container > #info {
-        font-size: 1.5em;
-    }
-    footer #footer-info ul:nth-child(2) {
-        font-size: .9375em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: .875em;
+div#waveDecoUp {
+    position: relative;
+    margin-top: -2em;
+}
+
+.newLine {
+    width: 100%;
+    height: .2em;
+    margin: 5em auto;
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0), rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
+}
+
+div#waveFlagDeco {
+    background-image: url("../Resources/Img/Kids_garland.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+
+    width: 100%;
+    height: 3.8em;
+
+
+}
+
+span.TxtNeon00 {
+    color: #8e2fea;
+}
+
+span.TxtNeon01 {
+    color: #00c8c8;
+}
+
+
+@media screen and (max-width: 1440px) {
+    div#waveFlagDeco {
+        height: 2.8em;
     }
 }
 
-@media screen and (max-width: 1070px) 
-{
-    #nav-contents-menu {
-        flex-direction: column;
+@media screen and (max-width: 1024px) {
+    div#waveFlagDeco {
+        height: 2em;
     }
-    #nav-contents-menu li:not(:last-child) {
-        padding: 0em 0em;
-    }
-    #contents-category-container #release-info div p:first-child {
-        font-size: 1.2em;
-    }
-    #contents-category-container #release-info div p:not(:first-child) {
-        font-size: 1em;
-    }
-    #contents-category-container > #info {
-        font-size: 1.1em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 2em;
-    }
-    footer #footer-info {
-        flex-direction: column;
-        text-align: center;
-    }
-    footer #footer-info ul:nth-child(2){
-        font-size: 20px;
-        padding: 2em 0em;
-        margin: 0px;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 19px;
+
+    div#waveDecoUp,
+    div#waveDecoDown {
+        font-size: .5em;
     }
 }
-@media screen and (max-width: 900px) {
-    #contents-main-InfoA p {
-        font-size: 1em;
+
+@media screen and (max-width: 768px) {
+    div#waveFlagDeco {
+        height: 1.6em;
     }
-    #contents-main-InfoB {
-        font-size: .7em;
-    }
-    #contents-main {
-        height: 40em;
-    }
-    #contents-category-container > #info .br {
-        display: flex;
-    }
-    #contents-category-container > #info {
-        font-size: 1.4em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 1.8em;
+
+    div#waveDecoUp,
+    div#waveDecoDown {
+        font-size: .35em;
     }
 }
-@media screen and (max-width: 700px) {
-    #contents-main-InfoA {
-        padding: .5em 1em;
-        margin: 0em 1em;
-    }
-    #contents-main-InfoA p {
-        font-size: .8em;
-    }
-    #contents-main-InfoB {
-        font-size: .55em;
-    }
-    #contents-main {
-        height: 35em;
-    }    
-    #release-container .br {
-        display: none;
-    }
-    #contents-category-container > #info {
-        font-size: 1.2em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 1.4em;
-    }
-}
-@media screen and (max-width: 530px) {
-    #contents-main img {
-        height: 10em;
-    }
-    #contents-main-InfoA .br{
-        display: flex;
-    }
-    #contents-main-InfoA p {
-        font-size: .69em;
-    }
-    #contents-main-InfoB {
-        font-size: .45em;
-    }
-    #contents-main {
-        height: 32em;
-    }
-    #contents-category-container #release-info div p:first-child {
-        font-size: 1em;
-    }
-    #contents-category-container #release-info div p:not(:first-child) {
-        font-size: .8em;
-    }
-    #contents-category-container > #title {
-        font-size: 1.8em;
-    }
-    #contents-category-container > #info {
-        font-size: 1em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: 1em;
-    }
-    footer #footer-info ul:nth-child(2){
-        font-size: 1.125em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 1.0625em;
-    }
-}
+
 @media screen and (max-width: 425px) {
-    #nav-logo li:nth-child(2) img {
-        display: none;
+    div#waveFlagDeco {
+        height: 1em;
     }
-    #contents-main-InfoA p {
-        font-size: .6em;
-    }
-    #contents-main-InfoB {
-        width: 100%;
-    }
-    #contents-category-container #release-container {
-        margin: 1%;
-    }
-    #contents-category-container > #title {
-        font-size: 1.6em;
-    }
-    #contents-category-container > #info {
-        font-size: .8em;
-    }
-    #contents-category-container > #comingSoon {
-        font-size: .8em;
-    }
-    footer #footer-info ul:nth-child(2){
-        font-size: 1em;
-    }
-    footer #footer-info ul:not(:nth-child(2)) {
-        font-size: 0.8em;
-    }
-} */
+}

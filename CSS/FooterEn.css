@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1840px) {
+    footer.en {
+        font-size: .8em;
+    }
+
+    footer.en .footer-links {
+        padding: 3em 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 1473px) {
+    footer.en {
+        font-size: .6em;
+    }
+
+    footer.en .footer-links {
+        padding: 4em 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer.en {
+        font-size: .4em;
+    }
+
+    footer.en .footer-links {
+        width: 40%;
+        padding: 5em 0 0.5em;
+    }
+}

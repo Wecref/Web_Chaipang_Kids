@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+div.contents-card {
+    font-size: 1em;
+    color: #686868;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.contents-card h1.title {
+    font-family: "NanumSquareEB";
+    font-size: 1.5em;
+}
+
+div.contents-card p.info {
+    line-height: 1.7em;
+    font-size: .85em;
+    margin: 0;
+    padding: 0;
+}
+
+div.contents-card div.edu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 18em;
+    background-color: #e4e1ff;
+    border-radius: 1em;
+    padding: 4em;
+    font-size: .8em;
+}
+
+div.contents-card div.edu-card:nth-child(n+3) {
+    background-color: #fffbd7;
+}
+
+div.contents-card div.edu-card img.main-image {
+    max-width: 451px;
+    width: 15.1em;
+    height: auto;
+}
+
+div.contents-card div.edu-cards {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.contents-card div.edu-cards div.edu-card {
+    margin: 1em;
+}
+
+
+div.contents-card div.edu-cards img.icon {
+    max-width: 217px;
+    width: 7.25em;
+    height: auto;
+    margin: 1em;
+}
+
+div.contents-card div.edu-cards p.name {
+    margin: 0;
+    font-family: "NanumSquareR";
+}
+
+div.contents-card div.edu-cards a.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+div.contents-card div.edu-cards a.link p {
+    height: auto;
+    margin: 0;
+    background-color: #ffd200;
+    padding: .5em 1em;
+    border-radius: 1em;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1697px) {
+    div.contents-card {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 1194px) {
+    div.contents-card {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 1011px) {
+    div.contents-card {
+        font-size: .5em;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    div.contents-card div.edu-card {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 674px) {
+
+    div.contents-card div.edu-card {
+        padding: 3em;
+    }
+
+    div.contents-card p.info {
+        line-height: 1.5em;
+        padding: 0 1em;
+    }
+
+    div.contents-card>.info br {
+        display: none;
+    }
+}

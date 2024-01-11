@@ -1,315 +1,312 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="Keywords"
-        content="Chaipang, Chaipang Kids, Chaipang Chinese, Chaipang Math, Chaipang Addition, Chaipang Substraction, Chaipang Multiplication, Wecref, Education for kids, Education for children, Math for kids, arithmetic for kids, addition for kids, substraction for kids, multiplication for kids" />
     <meta name="Description"
         content="Chaipang Kids is a children's educational content that children around the world can learn naturally while playing, singing, and having fun with Chaipang friends in the Fantasy world of Chaipang." />
+    <meta name="author" content="K.Moon" />
+    <meta name="publisher" content="Wecref" />
+    <meta name="generator" content="Visual Studio Code" />
+    <meta name="email" content="wecref.dev@gmail.com" />
+    <meta name="date" content="2022-02-25T10:23:00+09:00" />
+    <meta name="copyright" content="2022 Wecref Co., Ltd." />
 
-    <meta http-equiv="Subject"
-        content="Chaipang Kids is a children's educational content that children around the world can learn naturally while playing, singing, and having fun with Chaipang friends in the Fantasy world of Chaipang." />
-    <meta http-equiv="Title" content="Chaipang Kids" />
-    <meta http-equiv="Author" content="K.Moon" />
-    <meta http-equiv="publisher" content="Wecref" />
-    <meta http-equiv="Other Agent" content="K.Moon" />
-    <meta http-equiv="Generator" content="Visual Studio Code" />
-    <meta http-equiv="Reply-To" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Email" content="wecref.dev@gmail.com" />
-    <meta http-equiv="Distribution" content="K.Moon" />
-    <meta http-equiv="Copyright" content="2022 Wecref Co., Ltd." />
-    <meta name="Date" content="2022-02-25T10:23:00+09:00" />
-    <meta http-equiv="Content-Script-Type" content="Text/javascript" />
-    <meta property="https://chaipangkids.com/" content="website" />
-    <!-- 기본적 웹 설정 og 메타태그 -->
+    <!-- Open Graph 메타태그 -->
     <meta property="og:url" content="https://chaipangkids.com/" />
     <meta property="og:title" content="Chaipang Kids" />
     <meta property="og:image" content="https://chaipangkids.com/Resources/Img/share.png" />
-    <meta property="og:image:secure_url" content="https://chaipangkids.com/Resources/Img/share.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="차이팡 공유 썸네일" />
     <meta property="og:description"
         content="Chaipang Kids is a children's educational content that children around the world can learn naturally while playing, singing, and having fun with Chaipang friends in the Fantasy world of Chaipang." />
     <meta property="og:site_name" content="Chaipang Kids" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="차이팡 공유 썸네일" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="./Resources/Img/wecref_cion.png" />
+    <link rel="shortcut icon" type="image/png" href="Resources/Img/Asset 79.png" />
     <title>Chaipang Kids</title>
 
     <link rel="stylesheet" href="./main.css" />
-    <script type="module" src="./main.js" defer="defer"></script>
+    <script type="module" src="./main.js"></script>
 </head>
 
 <body>
     <span id="menu-main"></span>
-    <nav>
-        <div class="main">
-            <div class="logo">
-                <ul class="MarginZero PaddingZero">
-                    <li><img src="./Resources/Img/kids_1.png" /></li>
-                </ul>
-            </div>
-            <img class="menu_icon" src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
+    <nav class="en">
+        <div class="nav-header">
+            <a href="/" class="logo">
+                <img src="./Resources/Img/kids_1.png" alt="위크리프 로고" />
+            </a>
+            <button class="menu-toggle" aria-label="메뉴 토글">
+                <img src="./Resources/Img/list_white_48dp.svg" alt="메뉴 아이콘" />
+            </button>
         </div>
-        <div class="contents NanumB Font20Size">
-            <ul class="menus MarginZero PaddingZero">
-                <li data-href="#menu-main">About us</li>
-                <li data-href="#menu-educational">Educational Contents</li>
-                <li data-href="#menu-friends">Chaipang Friends</li>
-                <li data-href="#menu-business">Business</li>
-                <li>|</li>
-                <li><a href="https://wecref.com/en_index.html">Wecref Co., Ltd.</a></li>
+        <div class="nav-body">
+            <ul class="nav-menus">
+                <li><a href="#menu-main">About us</a></li>
+                <li><a href="#menu-educational">Educational Contents</a></li>
+                <li><a href="#menu-friends">Chaipang Friends</a></li>
+                <li><a href="#menu-business">Business</a></li>
+
+                <li><a href="https://wecref.com/kr_index.html">Wecref Co., Ltd.</a></li>
             </ul>
-            <ul class="link">
+            <ul class="social-links">
                 <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                            src="./Resources/Img/Math_4.png" /></a></li>
-                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png" /></a></li>
-                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png" /></a></li>
+                            src="./Resources/Img/Math_4.png" alt="유튜브" /></a></li>
+                <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/Math_5.png"
+                            alt="인스타그램" /></a></li>
+                <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/Math_6.png"
+                            alt="블로그" /></a>
+                </li>
             </ul>
-            <ul class="lang MarginZero PaddingZero">
-                <li data-lang="kr_index.html">KOR</li>
-                <li>|</li>
-                <li data-lang="en_index.html" class="clicked">ENG</li>
+            <ul class="language-selector">
+                <li><a href="kr_index.html">KOR</a></li>
+                <li><a href="en_index.html" class="active">ENG</a></li>
             </ul>
         </div>
     </nav>
-    <div id="contents-main">
-        <img src="./Resources/Img/kids_2.png" />
-        <div class="Info">
+
+    <div id="contents-main" class="en">
+        <img class="logo" src="./Resources/Img/website_Chaipangkids_BI.png" alt="키즈 메인 로고" />
+        <div class="info">
             <p class="NanumB Font30Size">
-                <span class="TxtNeon">Chaipang Kids </span>is<br /> a <span class="TxtNeon">children's educational
-                    content </span>
-                <br />that children from all over the world can learn on their own
-                <br />while playing, singing, and having fun with <span class="TxtNeon">Chaipang friends </span>
-                <br />in the <span class="TxtNeon">Fantasy world of Chaipang.</span>
+                <span>Chaipang Kids</span> is <br>
+                a children's <span class="TxtNeon01">educational content</span> <br>
+                that children from all over the world can learn on their own <br>
+                <span class="TxtNeon01">while playing, singing, and having fun</span> with Chaipang friends <br>
+                in the Fantasy world of Chaipang.
             </p>
         </div>
-        <img src="./Resources/Img/kids_frends.png" />
+        <img class="chars" src="./Resources/Img/kids_frends.png" alt="캐릭터" />
     </div>
     <div id="waveDecoUp"></div>
     <div id="waveFlagDeco"></div>
+
     <div id="contents-awards">
-        <img src="Resources/Img/Kids_garu_L.png" alt="종이효과">
-        <img src="Resources/Img/En/Kids_awards.png" alt="수상이력">
-        <img src="Resources/Img/Kids_garu_R.png" alt="종이효과">
+        <img class="deco" src="Resources/Img/Kids_garu_L.png" alt="종이효과">
+        <img class="main" src="Resources/Img/En/Kids_awards.png" alt="수상이력">
+        <img class="deco" src="Resources/Img/Kids_garu_R.png" alt="종이효과">
+        <span id="menu-educational"></span>
     </div>
     <span id="menu-educational"></span>
-    <div id="contents-category">
-        <div class="one">
-            <div class="main">
-                <p class="NanumEB Font45Size">Educational Contents</p>
-                <p class="NanumB Font30Size">With <span class="TxtNeon">Chaipang Chinese</span> as our main service,
-                    <br />we are expanding our educational contents such as
-                    <br />Chaipang addition, subtraction, multiplication, and so on.
+
+    <div class="contents-card en">
+        <h1 class="title">Educational Contents</h1>
+        <p class="info">
+            Chaipang Kids is expanding <br>
+            its educational content to include <span class="TxtNeon01">foreign languages,</span> <br>
+            <span class="TxtNeon01">math, art play, and safety education.</span>
+        </p>
+        <div class="edu-cards">
+            <div class="edu-card">
+                <img class="main-image" src="./Resources/Img/En/kids_3.png" alt="앱 메인 이미지">
+                <p class="info">
+                    Chaipang Chinese allows children to speak Chinese <br>
+                    <span class="TxtNeon00">without memorizing and studying.</span> <br>
+                    Children can learn Chinese tones and pronunciation <br>
+                    perfectly <span class="TxtNeon00">with songs and notes.</span>
                 </p>
+                <img src="./Resources/Img/website_Chaipangkids_BI_C.png" alt="앱 메인 아이콘" class="icon">
+                <p class="name">Chaipang Chinese</p>
+                <a class="link" href="https://chinese.chaipangkids.com/en_index.html">
+                    <p>▶ Go to Website</p>
+                </a>
             </div>
-            <div class="bodys">
-                <div class="category">
-                    <div class="info">
-                        <img src="Resources/Img/En/kids_3.png" alt="중국어">
-                        <p class="NanumB Font25Size">Chaipang Chinese allows your child to speak Chinese
-                            <br />without memorizing and studying.
-                            <br />Learn the tone and pronunciation perfectly
-                            <br> with songs and notes.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <img src="Resources/Img/kids_4.png" alt="앱 아이콘">
-                        <p class="NanumR Font30Size">Chaipang Chinese</p>
-                        <a href="https://chinese.chaipangkids.com/en_index.html">
-                            <p class="NanumEB Font20Size">▷ Go to website</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="info">
-                        <img src="Resources/Img/En/kids_5.png" alt="수학">
-                        <p class="NanumB Font25Size"><span class="TxtNeonB">Chaipang Addition</span>, <span
-                                class="TxtNeonC">Chaipang Subtraction</span>,
-                            <br />and <span class="TxtNeonD">Chaipang Multiplication</span> improve the accuracy
-                            <br />and speed of arithmetic calculations.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <img src="Resources/Img/kids_6.png" alt="앱 아이콘">
-                        <p class="NanumR Font30Size">Chaipang Math</p>
-                        <a href="https://math.chaipangkids.com/en_index.html">
-                            <p class="NanumEB Font20Size">▷ Go to website</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="info">
-                        <img src="Resources/Img/En/website_Chaipangkids_logo_color.png" alt="색칠놀이">
-                        <p class="NanumB Font25Size">Chaipang Coloring Book enhances <span class="TxtNeonD">children's
-                                creativity</span>
-                            <br><span class="TxtNeonD">and imagination</span> by allowing them
-                            <br>to <span class="TxtNeonD">draw and color</span> Chaipang Friends,
-                            <br>enabling them to showcase their fantastic artwork.
-                        </p>
-                    </div>
-                    <div class="link">
-                        <img src="Resources/Img/website_Chaipangkids_BI_color.png" alt="앱 아이콘">
-                        <p class="NanumR Font30Size">Coloring Book</p>
-                        <!-- <a href="https://math.chaipangkids.com/kr_index.html">
-                                        <p class="NanumEB Font20Size">▷ 홈페이지 바로가기</p>
-                                    </a> -->
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="info">
-                        <img src="Resources/Img/En/website_Chaipangkids_logo_safety.png" alt="안전교육">
-                        <p class="NanumB Font25Size">Chaipang Safety Tips makes <span class="TxtNeonD">learning safety
-                                information</span>
-                            <br>about home, kindergarten, school, playground,
-                            <br>park, fire, and water safety <span class="TxtNeonD">easy and enjoyable</span>
-                            <br>for children through <span class="TxtNeonD">interactive games.</span>
-                        </p>
-                    </div>
-                    <div class="link">
-                        <img src="Resources/Img/website_Chaipangkids_BI_S.png" alt="앱 아이콘">
-                        <p class="NanumR Font30Size">Safety Tip</p>
-                        <!-- <a href="https://math.chaipangkids.com/kr_index.html">
-                                        <p class="NanumEB Font20Size">▷ 홈페이지 바로가기</p>
-                                    </a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span id="menu-friends"></span>
-        <div class="newline"></div>
-        <div class="two">
-            <div class="main">
-                <p class="NanumEB Font45Size">Chaipang Friends</p>
-            </div>
-            <div class="bodys">
-                <img src="Resources/Img/En/kids_7.png" alt="차이팡 월드">
-                <div class="infos">
-                    <div class="template">
-                        <div class="tag">
-                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
-                            <p class="NanumEB Font25Size">Step1</p>
-                        </div>
-                        <div class="info">
-                            <p class="NanumB Font25Size">Unicorn world</p>
-                            <p class="NanumR Font20Size">It's a village of unicorns where fun festivals are held
-                                every day.</p>
-                        </div>
-                    </div>
-                    <div class="template">
-                        <div class="tag">
-                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
-                            <p class="NanumEB Font25Size">Step2</p>
-                        </div>
-                        <div class="info">
-                            <p class="NanumB Font25Size">Dragon world</p>
-                            <p class="NanumR Font20Size">It is a village of dragons full of mysterious ore and
-                                jewels.</p>
-                        </div>
-                    </div>
-                    <div class="template">
-                        <div class="tag">
-                            <img src="Resources/Img/kids_8.png" alt="태그 배경">
-                            <p class="NanumEB Font25Size">Step3</p>
-                        </div>
-                        <div class="info">
-                            <p class="NanumB Font25Size">Mermaid world</p>
-                            <p class="NanumR Font20Size">It is a beautiful sea village where mermaids live together.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="friendsInfo">
-                    <div class="tag">
-                        <img src="Resources/Img/kids_9.png" alt="태그">
-                        <p class="NanumEB Font20Size">I’ll introduce Chaipang Friends!</p>
-                    </div>
-                    <div class="imgs">
-                        <img src="Resources/Img/En/kids_10.png" alt="차이팡 콘텐츠">
-                        <img src="Resources/Img/En/kids_11.png" alt="차이팡 콘텐츠">
-                        <img src="Resources/Img/En/kids_12.png" alt="차이팡 콘텐츠">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span id="menu-business"></span>
-        <div class="newline"></div>
-        <div class="three">
-            <div class="main">
-                <p class="NanumEB Font45Size">Business</p>
-                <p class="NanumB Font30Size">
-                    We not only produce <span class="TxtNeon">app-based educational content</span> for children
-                    <br />and operate an <span class="TxtNeon">educational YouTube channel</span> and <span
-                        class="TxtNeon">publish books and textbooks</span> <br />to enhance educational
-                    effectiveness.
+            <div class="edu-card">
+                <img class="main-image" src="./Resources/Img/En/kids_5.png" alt="앱 메인 이미지">
+                <p class="info">
+                    Chaipang Math is <span class="TxtNeon00">a game-based calculation</span> <br>
+                    <span class="TxtNeon00">learning program</span> that improves <br>
+                    the <span class="TxtNeon00">speed and accuracy</span> of addition <br>
+                    and subtraction while playing various games.
                 </p>
+                <img src="./Resources/Img/kids_6.png" alt="앱 메인 아이콘" class="icon">
+                <p class="name">Chaipang Math</p>
+                <a class="link" href="https://math.chaipangkids.com/en_index.html">
+                    <p>▶ Go to Website</p>
+                </a>
             </div>
-            <div class="template">
-                <div class="tag">
-                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
-                    <p class="NanumEB Font25Size">Application</p>
-                </div>
-                <img src="Resources/Img/kids_13.png" alt="차이팡 앱">
-                <div>
-                    <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.chinese&hl=en&gl=kr"><img
-                            src="Resources/Img/source.png" alt="구글스토어"></a>
-                    <a href="https://apps.apple.com/de/app/chaipang-chinese/id1570555582?l=en"><img
-                            src="Resources/Img/source_1.png" alt="애플스토어"></a>
-                </div>
+            <div class="edu-card">
+                <img class="main-image" src="./Resources/Img/En/website_Chaipangkids_logo_color.png" alt="앱 메인 이미지">
+                <p class="info">
+                    Chaipang Coloring Book enhances <span class="TxtNeon00">children's creativity</span> <br>
+                    <span class="TxtNeon00">and imagination</span> by allowing them <br>
+                    to <span class="TxtNeon00">draw and color</span> Chaipang Friends, <br>
+                    enabling them to showcase their fantastic artwork.
+                </p>
+                <img src="./Resources/Img/website_Chaipangkids_BI_color.png" alt="앱 메인 아이콘" class="icon">
+                <p class="name">Coloring Book</p>
             </div>
-            <div class="template">
-                <div class="tag">
-                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
-                    <p class="NanumEB Font20Size">YouTube - Chaipang kids</p>
-                </div>
-                <div>
-                    <img src="Resources/Img/Kr/kids_14.png" alt="차이팡 앱">
-                    <a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                            src="Resources/Img/En/kids_15.png" alt="유튜브 버튼"></a>
-                </div>
-            </div>
-            <div class="template">
-                <div class="tag">
-                    <img src="Resources/Img/kids_17.png" alt="태그 배경">
-                    <p class="NanumEB Font20Size">Books & Textbooks</p>
-                </div>
-                <div>
-                    <img src="Resources/Img/Kr/kids_16-1.png" alt="차이팡 책">
-                    <img src="Resources/Img/Kr/kids_16-2.png" alt="차이팡 책">
-                    <img src="Resources/Img/Kr/kids_16-3.png" alt="차이팡 책">
-                </div>
+            <div class="edu-card">
+                <img class="main-image" src="./Resources/Img/En/website_Chaipangkids_logo_safety.png" alt="앱 메인 이미지">
+                <p class="info">
+                    Chaipang Safety Tips makes <span class="TxtNeon00">learning safety information</span> <br>
+                    about home, kindergarten, school, playground, <br>
+                    park, fire, and water safety <span class="TxtNeon00">easy and enjoyable</span> <br>
+                    for children through <span class="TxtNeon00">interactive games.</span>
+                </p>
+                <img src="./Resources/Img/website_Chaipangkids_BI_S.png" alt="앱 메인 아이콘" class="icon">
+                <p class="name">Safety Tip</p>
             </div>
         </div>
     </div>
+
+    <span id="menu-friends"></span>
+    <div class="newLine"></div>
+
+    <div class="contents-card en">
+        <h1 class="title">Chaipang Friends</h1>
+        <img src="./Resources/Img/En/kids_7.png" alt="차이팡 월드 이미지" class="singleImg01">
+        <div class="info01">
+            <div class="partition">
+                <div class="tag">
+                    <h1>Step1</h1>
+                </div>
+
+                <div class="subInfo">
+                    <h1>Unicorn world</h1>
+                    <p>It is a village of unicorns where fun festivals are held every day.</p>
+                </div>
+            </div>
+            <div class="partition">
+                <div class="tag">
+                    <h1>Step2</h1>
+                </div>
+
+                <div class="subInfo">
+                    <h1>Dragon world</h1>
+                    <p>It is a village of dragons abundant with mysterious ore and jewels.</p>
+                </div>
+            </div>
+            <div class="partition">
+                <div class="tag">
+                    <h1>Step3</h1>
+                </div>
+
+                <div class="subInfo">
+                    <h1>Mermaid world</h1>
+                    <p>It is a beautiful sea village where mermaids live harmoniously together.</p>
+                </div>
+            </div>
+        </div>
+        <div class="micoInfo">
+            <h1>I’ll introduce Chaipang Friends!</h1>
+        </div>
+        <div class="multiImg01">
+            <img src="Resources/Img/En/kids_10.png" alt="앱 설명 이미지">
+            <img src="Resources/Img/En/kids_11.png" alt="앱 설명 이미지">
+            <img src="Resources/Img/En/kids_12.png" alt="앱 설명 이미지">
+        </div>
+    </div>
+
+    <span id="menu-business"></span>
+    <div class="newLine"></div>
+
+    <div class="contents-card en">
+        <h1 class="title">Business</h1>
+        <p class="info">
+            Chaipang Kids enhances educational effectiveness <br>
+            not only through its apps but also by <span class="TxtNeon01">publishing books and</span> <br>
+            <span class="TxtNeon01">creating informative and enjoyable videos</span> <br>
+            based on its intellectual property (IP). <br>
+            Additionally, Chaipang Kids engages in <span class="TxtNeon01">various forms of IP commerce</span>, <br>
+            such as producing merchandise featuring its IP, Chaipang Friends.
+        </p>
+        <div class="unicornInfo">
+            <h1>Application</h1>
+        </div>
+        <img src="Resources/Img/website_Chaipangkids_app.png" alt="차이팡 중국어 이미지" class="singleImg02">
+        <div class="storeLinks">
+            <a href="https://play.google.com/store/apps/details?id=com.wecref.chaipang.chinese&hl=en&gl=kr">
+                <img src="Resources/Img/website_Chaipangkids_b_google.png" alt="구글 스토어 이미지"></a>
+            <a href="https://apps.apple.com/de/app/chaipang-chinese/id1570555582?l=en">
+                <img src="Resources/Img/website_Chaipangkids_b_appstore.png" alt="앱 스토어 이미지"></a>
+        </div>
+        <div class="unicornInfo">
+            <h1>YouTube & Animation</h1>
+        </div>
+        <div class="youtubeSite">
+            <a href=""><img src="Resources/Img/En/kids_15.png" alt="유튜브 바로가기 버튼"></a>
+        </div>
+        <div class="unicornInfo">
+            <h1>Books & Textbooks</h1>
+        </div>
+        <div class="multiImg02">
+            <div class="area">
+                <div class="big">
+                    <img src="Resources/Img/website_Chaipangkids_book_C1.png" alt="차이팡 책 쇼케이스">
+                    <img src="Resources/Img/website_Chaipangkids_book_C2.png" alt="차이팡 책 쇼케이스">
+                </div>
+                <div class="small">
+                    <div>
+                        <img src="Resources/Img/website_Chaipangkids_book_C3.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_C4.png" alt="차이팡 책 쇼케이스">
+                    </div>
+                    <div>
+                        <img src="Resources/Img/website_Chaipangkids_book_C5.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_C6.png" alt="차이팡 책 쇼케이스">
+                    </div>
+                    <div>
+                        <img src="Resources/Img/website_Chaipangkids_book_C7.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_C8.png" alt="차이팡 책 쇼케이스">
+                    </div>
+                </div>
+            </div>
+            <div class="area">
+                <div class="big">
+                    <img src="Resources/Img/website_Chaipangkids_book_M1.png" alt="차이팡 책 쇼케이스">
+                    <img src="Resources/Img/website_Chaipangkids_book_M2.png" alt="차이팡 책 쇼케이스">
+                </div>
+                <div class="small">
+                    <div>
+                        <img src="Resources/Img/website_Chaipangkids_book_M3.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_M4.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_M5.png" alt="차이팡 책 쇼케이스">
+                    </div>
+                    <div>
+                        <img src="Resources/Img/website_Chaipangkids_book_M6.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_M7.png" alt="차이팡 책 쇼케이스">
+                        <img src="Resources/Img/website_Chaipangkids_book_M8.png" alt="차이팡 책 쇼케이스">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="unicornInfo">
+            <h1>IP Commerce</h1>
+        </div>
+        <div class="ip">
+            <img src="Resources/Img/website_Chaipangkids_IP_S.png" alt="IP 비지니스" class="_1">
+            <img src="Resources/Img/website_Chaipangkids_IP_H.png" alt="IP 비지니스" class="_2">
+            <img src="Resources/Img/website_Chaipangkids_IP_G2.png" alt="IP 비지니스" class="_3">
+            <img src="Resources/Img/website_Chaipangkids_IP_M.png" alt="IP 비지니스" class="_4">
+        </div>
+    </div>
+
     <div id="waveDecoDown"></div>
-    <footer>
-        <ul class="link">
+    <footer class="en">
+        <ul class="footer-links">
             <li><a href="https://www.youtube.com/channel/UCpsxCqG0PIUx75o36Si4ptA"><img
-                        src="./Resources/Img/kids_18.png" /></a></li>
-            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/kids_19.png" /></a></li>
-            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/kids_20.png" /></a></li>
+                        src="./Resources/Img/kids_18.png" alt="유튜브 채널" /></a></li>
+            <li><a href="https://www.instagram.com/chaipang.kids"><img src="./Resources/Img/kids_19.png"
+                        alt="인스타그램 페이지" /></a></li>
+            <li><a href="https://blog.naver.com/chaipang_kids"><img src="./Resources/Img/kids_20.png"
+                        alt="네이버 블로그" /></a>
+            </li>
         </ul>
-        <div class="info">
-            <ul>
+        <div class="footer-info">
+            <ul class="info-list">
                 <li>Wecref Co., Ltd | CEO PARK, Jeongyeon</li>
                 <li>Business registration number | 281-81-01776</li>
                 <li>Terms & Conditions | Privacy Policy</li>
             </ul>
-            <ul>
-                <li><img src="./Resources/Img/source_2.png" /></li>
+            <ul class="info-list">
+                <li><img src="./Resources/Img/source_2.png" alt="위크리프 로고" /></li>
                 <li>©2021 Wecref All Right Reserved.</li>
             </ul>
-            <ul>
-                <li class="address">
-                    <p>Address&nbsp;|&nbsp;</p>
-                    <p>302,555,Samseong-ro,Gangnam-gu,<br>Seoul,Republic of Korea</p>
-                </li>
+            <ul class="info-list">
+                <li>Address | 302,555, Samseong-ro,Gangnam-gu, <br>Seoul,Republic of Korea</li>
                 <li>Tel | +82 2 508 0710</li>
                 <li>E-mail | support@wecref.com, jyp@wecref.com</li>
             </ul>

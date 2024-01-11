@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+div.contents-card.en div.micoInfo h1 {
+    font-size: .68em;
+}
+
+div.contents-card.en div.youtubeSite {
+    background-image: url("../Resources/Img/En/01. website_Chaipangkids_youtube.png");
+}
+
+@media screen and (max-width: 425px) {
+    div.contents-card.en div.info01 div.partition {
+        flex-direction: column;
+        font-size: .85em;
+    }
+
+    div.contents-card.en div.info01 div.partition .tag h1 {
+        font-size: 1em;
+        padding: 1.25em 0 .5em 0;
+    }
+
+
+}
