@@ -88,6 +88,12 @@ div.contents-card div.edu-cards a.link p {
     color: #ffffff;
 }
 
+div.contents-card div.edu-cards .link-google img {
+    max-width: 176px;
+    width: 7.5em;
+    margin-top: 1em;
+}
+
 @media screen and (max-width: 1697px) {
     div.contents-card {
         font-size: .7em;
